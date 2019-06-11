@@ -1,2 +1,2 @@
 # v9-toucans-team-17
-Add-project-description-here | Voyage-9 | https://chingu.io/
+A landing-page for a company which sells rice grains as their primary product | Voyage-9 | https://chingu.io/
