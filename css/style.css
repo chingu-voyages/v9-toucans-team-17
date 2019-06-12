@@ -295,6 +295,7 @@ body {
   #bg-black-rice {
     width: 60%;
     height: 55vh;
+    transform: translatex(100%);
   }
   
   .bg-text-black {
@@ -304,7 +305,7 @@ body {
     width: 30rem;
     height: 48vh;
     text-align: right;
-    transform: translateX(15%);
+    transform: translateX(-150%);
   }
 
   #red-rice {
@@ -318,6 +319,7 @@ body {
   #bg-red-rice {
     width: 60%;
     height: 55vh;
+    transform: translatex(-100%);
   }
   
   .bg-text-red {
@@ -327,7 +329,7 @@ body {
     width: 30rem;
     height: 48vh;
     text-align: left;
-    transform: translateX(-5%);
+    transform: translateX(150%);
   }
 
   #brown-rice {
@@ -341,6 +343,7 @@ body {
   #bg-brown-rice {
     width: 60%;
     height: 55vh;
+    transform: translatex(100%);
   }
   
   .bg-text-brown {
@@ -350,7 +353,7 @@ body {
     width: 30rem;
     height: 48vh;
     text-align: right;
-    transform: translateX(15%);
+    transform: translateX(-150%);
   }
 
   .text-rice h3 {
