@@ -172,7 +172,7 @@ body {
 }
 
 .broder-bottom {
-  border-top: 2px solid black;
+  border-top: 3px solid black;
   width: 6.5em;
   margin-bottom: 1.2em;
   margin-top: 0.5em;
@@ -217,6 +217,18 @@ body {
   }
   .content-header p {
     font-size: 1rem;
+  }
+
+  /* Our Product */
+  .text-rice h3 {
+    font-size: 1.5em;
+  }
+  .text-rice p {
+    font-size: 1.2em;
+  }
+
+  .broder-bottom {
+    width: 7.5em;
   }
 
   /* utilities */
@@ -283,15 +295,17 @@ body {
   #bg-black-rice {
     width: 60%;
     height: 55vh;
+    transform: translatex(100%);
   }
   
   .bg-text-black {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 20rem;
+    width: 30rem;
+    height: 48vh;
     text-align: right;
-    transform: translateX(20%);
+    transform: translateX(-150%);
   }
 
   #red-rice {
@@ -305,14 +319,17 @@ body {
   #bg-red-rice {
     width: 60%;
     height: 55vh;
+    transform: translatex(-100%);
   }
   
   .bg-text-red {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 20rem;
+    width: 30rem;
+    height: 48vh;
     text-align: left;
+    transform: translateX(150%);
   }
 
   #brown-rice {
@@ -326,15 +343,28 @@ body {
   #bg-brown-rice {
     width: 60%;
     height: 55vh;
+    transform: translatex(100%);
   }
   
   .bg-text-brown {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 20rem;
+    width: 30rem;
+    height: 48vh;
     text-align: right;
-    transform: translateX(20%);
+    transform: translateX(-150%);
+  }
+
+  .text-rice h3 {
+    font-size: 1.5em;
+  }
+  .text-rice p {
+    font-size: 1.2em;
+  }
+
+  .broder-bottom {
+    width: 7.5em;
   }
 
   /* utilities */
@@ -377,6 +407,19 @@ body {
   }
   .content-header p {
     font-size: 2rem;
+  }
+
+  /* Our Product */
+  .text-rice h3 {
+    padding-top: 0.8em;
+    font-size: 1.6em;
+  }
+  .text-rice p {
+    font-size: 1.3em;
+  }
+
+  .broder-bottom {
+    width: 8em;
   }
 
   /* utilities */
