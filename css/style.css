@@ -120,6 +120,65 @@ body {
   margin-bottom: 10vh;
 }
 
+/* Our Product */
+#product h1 {
+  text-align: center;
+  margin: 2em 0;
+
+}
+
+.rice {
+  display: flex;
+  flex-direction: column;
+}
+
+#bg-black-rice {
+  background: url(../img/blackrice.jpg) no-repeat center/cover;
+  height: 18rem;
+  min-width: 15rem;
+}
+
+#bg-red-rice {
+  background: url(../img/pile-of-red-rice-isolated-on-black-rotating_440qrglde__F0014.png) no-repeat center/cover;
+  height: 18rem;
+  min-width: 15rem;
+}
+
+#bg-brown-rice {
+  background: url(../img/pandan-wangi.jpg) no-repeat center/cover;
+  height: 18rem;
+  min-width: 15rem;
+}
+
+.bg-text-black {
+  background: rgba(192, 166, 80, 0.788);
+  color: #fff;
+}
+
+.bg-text-red {
+  background: #fff;
+  color: #333333;
+}
+
+.bg-text-brown {
+  background: rgba(192, 166, 80, 0.788);
+  color: #fff;
+}
+
+.text-rice {
+  margin: 1.2em 1.5em;
+  padding: 1em 1em;
+  text-align: justify;
+}
+
+.broder-bottom {
+  border-top: 2px solid black;
+  width: 6.5em;
+  margin-bottom: 1.2em;
+  margin-top: 0.5em;
+}
+
+
 /* Utilities */
 .btn {
   border-radius: 30px;
