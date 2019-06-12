@@ -182,6 +182,46 @@ body {
   border-color: aquamarine;
 }
 
+/* Our Story */
+#story {
+  background: 
+  linear-gradient(to bottom, rgba(244, 244, 250, 0.2), rgba(117, 94, 19, 0.73)),
+  url(../img/wp4233488.jpg) fixed no-repeat center/cover;
+  padding-top: 5vh;
+}
+
+.text-story {
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 4vh;
+}
+
+.text-story h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: .2rem;
+  padding-top: 2vh;
+}
+
+.text-story p {
+  font-size: .8em;
+  font-weight: bold;
+  width: 80%;
+  margin: auto;
+  padding-top: 5vh;
+  margin-bottom: 3vh;
+  line-height: 1.2rem;
+}
+
+.text-story p a {
+  color: #fff;
+  font-size: 1rem;
+  transition: all .3s ease-in-out;
+}
+
+.text-story p a:hover {
+  color: #333333;
+}
 
 /* Utilities */
 .btn {
@@ -229,6 +269,15 @@ body {
 
   .broder-bottom {
     width: 7.5em;
+  }
+
+  /* Our Story */
+  .text-story h1{
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .text-story p {
+    font-size: 1rem;
   }
 
   /* utilities */
@@ -367,6 +416,15 @@ body {
     width: 7.5em;
   }
 
+  /* Our Story */
+  .text-story h1{
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+  .text-story p {
+    font-size: 1.3rem;
+  }
+
   /* utilities */
   #hamburger-icon {
     display: none;
@@ -420,6 +478,20 @@ body {
 
   .broder-bottom {
     width: 8em;
+  }
+
+  /* Our Story */
+  .text-story h1{
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-top: 7vh;
+  }
+  .text-story p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .text-story p a {
+    font-size: 1.5rem;
   }
 
   /* utilities */
