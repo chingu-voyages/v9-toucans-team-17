@@ -121,10 +121,14 @@ body {
 }
 
 /* Our Product */
+#main {
+  background-color: #fff;
+}
 #product h1 {
   text-align: center;
-  margin: 2em 0;
-
+  padding: 2em 0;
+  color: #D7D466;
+  font-family: 'lato', sans-serif;
 }
 
 .rice {
@@ -134,35 +138,27 @@ body {
 
 #bg-black-rice {
   background: url(../img/blackrice.jpg) no-repeat center/cover;
-  height: 18rem;
+  height: 45vh;
   min-width: 15rem;
 }
 
 #bg-red-rice {
   background: url(../img/pile-of-red-rice-isolated-on-black-rotating_440qrglde__F0014.png) no-repeat center/cover;
-  height: 18rem;
+  height: 45vh;
   min-width: 15rem;
 }
 
 #bg-brown-rice {
   background: url(../img/pandan-wangi.jpg) no-repeat center/cover;
-  height: 18rem;
+  height: 45vh;
   min-width: 15rem;
 }
 
-.bg-text-black {
-  background: rgb(192, 166, 80);
-  color: #fff;
-}
-
-.bg-text-red {
+.bg-text-black,
+.bg-text-red,
+.bg-text-brown {
   background: #fff;
   color: #333333;
-}
-
-.bg-text-brown {
-  background: rgb(192, 166, 80);
-  color: #fff;
 }
 
 .text-rice {
@@ -171,16 +167,30 @@ body {
   text-align: justify;
 }
 
-.broder-bottom {
-  border-top: 3px solid black;
-  width: 6.5em;
-  margin-bottom: 1.2em;
-  margin-top: 0.5em;
+.text-rice h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 3vh;
+  padding-bottom: 1.5vh;
 }
 
-#red-rice .broder-bottom {
-  border-color: aquamarine;
+.text-rice h3:after {
+    content: ""; 
+    display: block; 
+    width: 35%; 
+    padding-top: 1.5vh; 
+    border-bottom: 2px solid #B7AA5D; 
+    margin:0 .1rem;
 }
+
+.text-rice p {
+  font-size: .9rem;
+}
+
+.bg-text-red h3:after {
+  width: 25%;
+}
+
+
 
 /* Our Story */
 #story {
@@ -201,11 +211,12 @@ body {
   line-height: 2rem;
   letter-spacing: .2rem;
   padding-top: 2vh;
+  font-family: 'lato', sans-serif;
 }
 
 .text-story p {
   font-size: .8em;
-  font-weight: bold;
+  font-weight: 400;
   width: 80%;
   margin: auto;
   padding-top: 5vh;
@@ -214,13 +225,89 @@ body {
 }
 
 .text-story p a {
-  color: #fff;
-  font-size: 1rem;
+  border-radius: 30px;
+  padding: 1.1em 1.5em;
+  text-decoration: none;
+  font-size: .7rem;
+  color: #333333;
+  background-color: #ffffff;
   transition: all .3s ease-in-out;
 }
 
 .text-story p a:hover {
-  color: #333333;
+  background-color: #000;
+  color: #fff;
+}
+
+/* contact-section */
+
+#contact {
+  background-color: #EBE4D1;
+  height: 30vh;
+  position: relative;
+}
+
+#contact .contact-front-parts {
+  position: absolute;
+  top: 10vh;
+  background-color: #fff;
+  width: 80%;
+  left: 10vw; 
+  height: 43vh;
+  box-shadow: (5px 5px 5px #000);
+}
+
+#contact h3 {
+  color: #847629;
+  text-align: center;
+  font-family: "lato", serif;
+}
+
+#contact h3:after {
+    content: ""; 
+    display: block; 
+    width: 25%; 
+    padding-top: 1.5vh; 
+    border-bottom: 1px solid #000; 
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact #email-and-office,
+#contact #social-media {
+  padding-top: 3vh;
+}
+
+#contact #email-and-office p {
+  text-align: center;
+  font-size: .8rem;
+  line-height: 1.5rem;
+}
+
+#contact #email-and-office p span {
+  font-weight: bold;
+}
+
+#contact #social-media-icons{
+  text-align: center;
+}
+#contact #social-media #social-media-icons img {
+  width: 10%;
+  margin-right: 2vw;
+}
+
+footer {
+  background-color: #3A2201;
+  height: 33vh;
+}
+
+footer p {
+  font-size: .5rem;
+  text-align: center;
+  color: #fff;
+  padding-top: 26vh;
+  opacity: .8;
 }
 
 /* Utilities */
@@ -260,6 +347,20 @@ body {
   }
 
   /* Our Product */
+  #bg-black-rice,
+  #bg-red-rice,
+  #bg-brown-rice {
+    height: 60vh;
+  }
+
+  .text-rice h3:after { 
+    width: 25%; 
+  }
+
+  .bg-text-red h3:after {
+    width: 15%;
+  }
+
   .text-rice h3 {
     font-size: 1.5em;
   }
@@ -267,17 +368,54 @@ body {
     font-size: 1.2em;
   }
 
-  .broder-bottom {
-    width: 7.5em;
+  /* Our Story */
+  #story {
+    height: 70vh;
   }
 
-  /* Our Story */
+  .text-story {
+    padding-top: 6vh;
+  }
+
   .text-story h1{
     font-size: 2.2rem;
     line-height: 3rem;
   }
   .text-story p {
     font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* contact */
+
+  #contact {
+    height: 45vh;
+  }
+
+  #contact .contact-front-parts {
+    top: 15vh;
+    height: 55vh;
+  }
+
+  footer{
+    height: 40vh;
+  }
+
+  footer p {
+    padding-top: 32vh;
+  }
+  
+  #contact #email-and-office {
+    padding-top: 8vh;
+  }
+
+  #contact h3 {
+    font-size: 1.5rem;
+  }
+
+  #contact #email-and-office p {
+    font-size: 1rem;
+    line-height: 2rem;
   }
 
   /* utilities */
@@ -285,6 +423,8 @@ body {
     padding: 1.2em 2.3em;
     font-size: .8rem;
   }
+
+  
 }
 
 @media (min-width: 768px){
@@ -333,6 +473,11 @@ body {
   }
 
   /* Our Product */
+  #product h1 {
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+  }
+
   #black-rice {
     flex-direction: row-reverse;
     align-items: center;
@@ -341,9 +486,24 @@ body {
     margin-bottom: 5em;
   }
 
+  #bg-black-rice,
+  #bg-red-rice,
+  #bg-brown-rice {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .text-rice {
+    width: 35em;
+    height: 48vh;
+  }
+
+  .text-rice p {
+    font-size: 1em;
+    width: 100%;
+  }
+
   #bg-black-rice {
-    width: 60%;
-    height: 55vh;
     transform: translatex(100%);
   }
   
@@ -351,10 +511,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 30rem;
-    height: 48vh;
     text-align: right;
     transform: translateX(-150%);
+    background-color: #C0B5A5;
+    color: #fff;
   }
 
   #red-rice {
@@ -366,8 +526,6 @@ body {
   }
 
   #bg-red-rice {
-    width: 60%;
-    height: 55vh;
     transform: translatex(-100%);
   }
   
@@ -375,10 +533,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 30rem;
-    height: 48vh;
     text-align: left;
     transform: translateX(150%);
+    background: transparent;
   }
 
   #brown-rice {
@@ -390,8 +547,6 @@ body {
   }
 
   #bg-brown-rice {
-    width: 60%;
-    height: 55vh;
     transform: translatex(100%);
   }
   
@@ -399,36 +554,91 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 30rem;
-    height: 48vh;
     text-align: right;
     transform: translateX(-150%);
+    background-color: #C0B5A5;
+    color: #fff;
   }
 
   .text-rice h3 {
     font-size: 1.5em;
-  }
-  .text-rice p {
-    font-size: 1.2em;
+    margin-bottom: .4rem;
   }
 
-  .broder-bottom {
-    width: 7.5em;
+
+  .text-rice h3:after { 
+    width: 50%; 
+    border-bottom-color: #000;
+    margin-left: auto;
   }
+
+  .bg-text-red h3:after {
+    width: 45%;
+    margin-left: 2%;
+    border-bottom-color: #B7AA5D;
+  }
+  
 
   /* Our Story */
+  
+  #story {
+    height: 80vh;
+  }
   .text-story h1{
     font-size: 3rem;
     line-height: 4.5rem;
   }
   .text-story p {
     font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  /* contact */
+
+  #contact {
+    height: 60vh;
+  }
+
+  #contact .contact-front-parts {
+    top: 15vh;
+    height: 80vh;
+  }
+
+  footer{
+    height: 50vh;
+  }
+
+  footer p {
+    padding-top: 40vh;
+    font-size: .8rem;
+  }
+  
+  #contact #email-and-office {
+    padding-top: 10vh;
+  }
+
+  #contact h3 {
+    font-size: 2rem;
+  }
+
+  #contact #email-and-office p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  #contact #social-media {
+    padding-top: 6vh;
   }
 
   /* utilities */
   #hamburger-icon {
     display: none;
   }
+  
+  .text-story p a,
+  .btn {
+    font-size: .9rem;
+  } 
 }
 
 
@@ -473,26 +683,75 @@ body {
     font-size: 1.6em;
   }
   .text-rice p {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
-  .broder-bottom {
-    width: 8em;
-  }
+  #bg-black-rice,
+  #bg-red-rice,
+  #bg-brown-rice{
+      min-height: 60vh;
+      max-width: 50vw;
+     }
+
 
   /* Our Story */
+
+  #story {
+    height: 90vh;
+  }
+
   .text-story h1{
     font-size: 4rem;
     line-height: 5rem;
     margin-top: 7vh;
   }
+
   .text-story p {
     font-size: 2rem;
     line-height: 2.5rem;
   }
+
   .text-story p a {
     font-size: 1.5rem;
   }
+
+  /* contact */
+
+  #contact {
+    height: 70vh;
+  }
+
+  #contact .contact-front-parts {
+    top: 15vh;
+    height: 100vh;
+  }
+
+  footer{
+    height: 70vh;
+  }
+
+  footer p {
+    padding-top: 60vh;
+    font-size: 1rem;
+  }
+  
+  #contact #email-and-office {
+    padding-top: 16vh;
+  }
+
+  #contact h3 {
+    font-size: 3rem;
+  }
+
+  #contact #email-and-office p {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+  }
+
+  #contact #social-media {
+    padding-top: 6vh;
+  }
+
 
   /* utilities */
   .btn {
@@ -500,5 +759,11 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
   }
+  .text-story p a {
+    font-size: 1.1rem;
+  }
 
 }
+
+
+
