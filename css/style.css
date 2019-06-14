@@ -292,6 +292,10 @@ body {
 #contact #social-media-icons{
   text-align: center;
 }
+#contact #social-media-icons>a{
+  position: relative;
+  z-index: 9999;
+}
 #contact #social-media #social-media-icons img {
   width: 10%;
   margin-right: 2vw;
@@ -476,6 +480,10 @@ footer p {
   #product h1 {
     font-size: 2.5rem;
     letter-spacing: .3rem;
+  }
+
+  .rice {
+    overflow-x: hidden;
   }
 
   #black-rice {
