@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: azure;
@@ -334,6 +337,22 @@ footer p {
   color: #fff;
 }
 
+.btn-outline-success {
+  background-color: #ffffff;
+  border : 2px solid rgb(107, 231, 107);
+  color: rgb(107, 231, 107);
+  transition: all .3s ease-in-out;
+}
+
+.btn-outline-success:hover {
+  background-color: rgb(107, 231, 107);
+  color: #fff;
+}
+
+.mt-5 {
+  margin-top: 5em;
+}
+
 @media (min-width: 481px) {
   /* navigation */
 
@@ -503,26 +522,22 @@ footer p {
 
   .text-rice {
     width: 35em;
-    height: 48vh;
+    height: 60vh;
+    margin: 0 2em;
   }
 
   .text-rice p {
     font-size: 1em;
     width: 100%;
-  }
-
-  #bg-black-rice {
-    transform: translatex(100%);
+    opacity: 0;
+    transform: scale(-1);
   }
   
   .bg-text-black {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-    transform: translateX(-150%);
-    background-color: #C0B5A5;
-    color: #fff;
+    text-align: justify;
+    background-color: transparent;
   }
 
   #red-rice {
@@ -532,17 +547,11 @@ footer p {
     margin-right: 1em;
     margin-bottom: 5em;
   }
-
-  #bg-red-rice {
-    transform: translatex(-100%);
-  }
   
   .bg-text-red {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    transform: translateX(150%);
+    text-align: justify;
     background: transparent;
   }
 
@@ -553,36 +562,32 @@ footer p {
     margin-left: 1em;
     margin-bottom: 5em;
   }
-
-  #bg-brown-rice {
-    transform: translatex(100%);
-  }
   
   .bg-text-brown {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-    transform: translateX(-150%);
-    background-color: #C0B5A5;
-    color: #fff;
+    text-align: justify;
+    background-color: transparent;
   }
 
   .text-rice h3 {
+    text-align: center;
     font-size: 1.5em;
     margin-bottom: .4rem;
+    opacity: 0;
+    transform: scale(-1);
   }
 
 
   .text-rice h3:after { 
     width: 50%; 
     border-bottom-color: #000;
-    margin-left: auto;
+    margin: 0 auto;
   }
 
   .bg-text-red h3:after {
     width: 45%;
-    margin-left: 2%;
+    margin: 0 auto;
     border-bottom-color: #B7AA5D;
   }
   
