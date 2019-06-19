@@ -27,18 +27,19 @@ const media768 = window.matchMedia("(min-width: 768px)");
 
   function scroll() {
   if(document.body.scrollTop > yBlack + 100 && media768.matches || document.documentElement.scrollTop > yBlack + 100 && media768.matches) {
-    console.log(yRed + "px Bred");
-    TweenMax.to("#bg-black-rice", 1, {x: 0, ease: Circ.easeOut});
-    TweenMax.to(".bg-text-black", 1, {x: 50, delay: 1, ease: Circ.easeOut});
+    // console.log(yRed + 100 + "px Yblack");
+    TweenMax.to(".bg-text-black h3", 2, {opacity: 1, scale: -1, ease: Circ.easeOut});
+    TweenMax.to(".bg-text-black p", 3, {opacity: 1, scale: -1, delay: 1, ease: Circ.easeOut});
   }
-  if(document.body.scrollTop > yBlack + 100 && media768.matches || document.documentElement.scrollTop > yRed + 500 && media768.matches) {
-    console.log(yRed + "px Yred");
-    TweenMax.to("#bg-red-rice", 1, {x: 0, ease: Circ.easeOut});
-    TweenMax.to(".bg-text-red", 1, {x: -25, delay: 1, ease: Circ.easeOut});
+  if(document.body.scrollTop > yBlack + 500 && media768.matches || document.documentElement.scrollTop > yRed + 500 && media768.matches) {
+    // console.log(yRed + 500 + "px Yred");
+    TweenMax.to(".bg-text-red h3", 2, {opacity: 1, scale: -1, ease: Circ.easeOut});
+    TweenMax.to(".bg-text-red p", 3, {opacity: 1, scale: -1, delay: 1, ease: Circ.easeOut});
   }
-  if(document.body.scrollTop > yBlack + 100 && media768.matches || document.documentElement.scrollTop > yBrown + 1000 && media768.matches) {
-    TweenMax.to("#bg-brown-rice", 1, {x: 0, ease: Circ.easeOut});
-    TweenMax.to(".bg-text-brown", 1, {x: 50, delay: 1, ease: Circ.easeOut});
+  if(document.body.scrollTop > yBlack + 1000 && media768.matches || document.documentElement.scrollTop > yBrown + 1000 && media768.matches) {
+    // console.log(yRed + 1000 + "px Ybrown");
+    TweenMax.to(".bg-text-brown h3", 2, {opacity: 1, scale: -1, ease: Circ.easeOut});
+    TweenMax.to(".bg-text-brown p", 3, {opacity: 1, scale: -1, delay: 1, ease: Circ.easeOut});
   }
 }
 
