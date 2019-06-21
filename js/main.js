@@ -1,8 +1,12 @@
+// algorithm for the headline animation
 window.onload = load;
 
 function load() {
-  TweenMax.to(".content-header", 2, {opacity: 1, scale: 1, ease: Circ.easeOut});
-  TweenMax.from(".li-down", 1.3, {y: -60, delay: 1, ease: Circ.easeOut});
+    var headerTimeline = new TimelineLite();
+    headerTimeline.from('#nav', 1, {y: -50, opacity:0})
+    headerTimeline.from('#head', 1, {opacity:0}, .8);
+    headerTimeline.from('.content-header h1', 1, {y: 100, opacity:0}, 1); 
+    headerTimeline.from('.content-header p:nth-of-type(1)', 1, {y: 100, opacity:0}, 2);
 }
 
 // algorithm for mobile navbar
@@ -14,6 +18,23 @@ hamburgerButton.addEventListener('click', () => {
   document.querySelector('.bar3').classList.toggle('change');
   document.querySelector('#nav ul').classList.toggle('active');
 })
+
+// algorithm for navbar animation on scroll
+if (window.innerWidth >= 768){
+  var navScroll = new TimelineLite();
+    navScroll.to("#nav", .3, {y:-20});
+    navScroll.to("#nav h1", .2, {scale:.9},.1)
+    navScroll.to("#nav ul", .1, {scale: .97},'-=.1')
+  var navbar_controller = new ScrollMagic.Controller();
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#product h1",
+    triggerHook: "onEnter",
+    duration: "100%"
+})
+    .setTween(navScroll)
+    .addTo(navbar_controller);
+}
 
 // scroll event triggered by ID
 const blackRice = document.getElementById('black-rice');
@@ -44,4 +65,15 @@ const media768 = window.matchMedia("(min-width: 768px)");
 }
 
 window.onscroll = function() {scroll()};
-  
+
+
+
+
+
+
+/* unused code */
+
+/*
+TweenMax.to(".content-header", 2, {opacity: 1, scale: 1, ease: Circ.easeOut});
+TweenMax.from(".li-down", 1.3, {y: -60, delay: 1, ease: Circ.easeOut});
+*/
