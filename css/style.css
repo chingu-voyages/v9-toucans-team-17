@@ -48,6 +48,7 @@ body {
   background-color: #333;
   margin: 3px 0;
   transition: 0.4s;
+  opacity: .5;
 }
 
 .change.bar1 {
@@ -103,8 +104,7 @@ body {
 .content-header {
   text-align: center;
   color: #ffffff;
-  transform: scale(0);
-  opacity: 0;
+  opacity: 1;
   padding-bottom: 4vh;
 }
 
@@ -696,6 +696,7 @@ footer p {
   }
   .text-rice p {
     font-size: 1.1em;
+    line-height: 1.5rem;
   }
 
   #bg-black-rice,
