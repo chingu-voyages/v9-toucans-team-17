@@ -37,16 +37,23 @@ if (window.innerWidth >= 768){
 }
 
 // scroll event triggered by ID
-const blackRice = document.getElementById('black-rice');
-const redRice = document.getElementById('red-rice');
-const brownRice = document.getElementById('brown-rice');
-const media768 = window.matchMedia("(min-width: 768px)");
+const blackRice = document.getElementById('black-rice'),
+      redRice = document.getElementById('red-rice'),
+      brownRice = document.getElementById('brown-rice'),
+      returnUp = document.getElementById('return-up'),
+      media768 = window.matchMedia("(min-width: 768px)");
 
-  let yBlack = blackRice.scrollHeight;
-  let yRed = redRice.scrollHeight;
-  let yBrown = brownRice.scrollHeight;
+  let yBlack = blackRice.scrollHeight,
+      yRed = redRice.scrollHeight,
+      yBrown = brownRice.scrollHeight;
 
   function scroll() {
+    if(document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+      returnUp.style.display = 'block';
+    } else {
+      returnUp.style.display = 'none';
+    }
+
   if(document.body.scrollTop > yBlack + 100 && media768.matches || document.documentElement.scrollTop > yBlack + 100 && media768.matches) {
     // console.log(yRed + 100 + "px Yblack");
     TweenMax.to(".bg-text-black h3", 2, {opacity: 1, scale: -1, ease: Circ.easeOut});
@@ -65,6 +72,11 @@ const media768 = window.matchMedia("(min-width: 768px)");
 }
 
 window.onscroll = function() {scroll()};
+
+// onClick return up-arrow
+function Home() {
+  window.scrollTo(0, 0);
+}
 
 
 
