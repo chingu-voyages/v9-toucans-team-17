@@ -317,6 +317,26 @@ footer p {
   opacity: .8;
 }
 
+/* features */
+#return-up {
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  width: 2em;
+  height: 2.2em;
+  margin: 0;
+  padding: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  opacity: 0.5;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+#return-up:hover {
+  opacity: 1;
+}
+
 /* Utilities */
 .btn {
   border-radius: 30px;
@@ -335,6 +355,12 @@ footer p {
 .btn-light:hover {
   background-color: #000;
   color: #fff;
+}
+
+.btn-green {
+  background-color: rgb(107, 231, 107);
+  border: none;
+  color: #333333;
 }
 
 .btn-outline-success {
@@ -640,6 +666,23 @@ footer p {
 
   #contact #social-media {
     padding-top: 6vh;
+  }
+
+  /* features */
+  #return-up {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    width: 2.5em;
+    height: 2.8em;
+    margin: 0;
+    padding: 0;
+    display: none;
+    font-size: 1.5em;
+    border-radius: 20px;
+    opacity: 0.5;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
   }
 
   /* utilities */
