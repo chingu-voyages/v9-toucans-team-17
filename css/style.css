@@ -12,6 +12,9 @@ body {
   font-family: "montserrat" , sans-serif;
 }
 
+button:focus {
+  outline:0;
+}
 
 /* Navbar */
 #nav {
@@ -330,8 +333,9 @@ footer p {
   font-size: 1em;
   border-radius: 20px;
   opacity: 0.5;
-  transition: all 1s ease-in-out;
+  transition: all .3s ease-in-out;
   cursor: pointer;
+  z-index: 10000;
 }
 #return-up:hover {
   opacity: 1;
@@ -360,7 +364,7 @@ footer p {
 .btn-green {
   background-color: rgb(107, 231, 107);
   border: none;
-  color: #333333;
+  color: #fff;
 }
 
 .btn-outline-success {
